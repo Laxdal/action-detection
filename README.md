@@ -1,6 +1,6 @@
 # Action Detection Prototype
 
-基于 YOLO26n-pose + MMAction2 STGCN++ 的动作检测原型项目。
+基于 YOLO26n-pose + MMAction2 STGCN++ 的动作检测原型项目。 具体技术文档可见: [DOCS.md](DOCS.md)
 
 ## 架构
 
