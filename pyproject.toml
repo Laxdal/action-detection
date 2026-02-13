@@ -1,0 +1,37 @@
+[project]
+name = "action-detection"
+version = "0.1.0"
+description = "Action detection prototype using YOLO26n-pose + MMAction2"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "importlib-metadata>=8.7.1",
+    "mmaction2==1.2.0",
+    "mmcv-lite>=2.0.0,<2.2.0",
+    "mmengine>=0.10.7",
+    "numpy<2.0",
+    "openmim>=0.3.9",
+    "torch==2.1.0",
+    "torchvision==0.16.0",
+    "ultralytics>=8.4.12",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchvision = { index = "pytorch-cpu" }
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = [
+    "ignore::UserWarning:mmcv",
+]
