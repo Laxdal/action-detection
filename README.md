@@ -4,7 +4,7 @@
 
 An action detection prototype project based on **YOLO26n-pose** + **MMAction2 STGCN++**.
 
-**Documentation:** [English (DOCS_EN.md)](DOCS_EN.md) | [中文 (DOCS_CH.md)](DOCS_CH.md)
+**Documentation:** [English Docs](DOC_EN.md) | [中文](DOC_CH.md)
 
 ## Architecture
 
