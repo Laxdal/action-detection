@@ -1,5 +1,5 @@
-# APSC103 892C
----
+## APSC103 892C
+
 # Action Detection Prototype
 
 An action detection prototype project based on **YOLO26n-pose** + **MMAction2 STGCN++**.
